@@ -26,7 +26,7 @@ npm run dev
 ## Vue File structure
 
 <script>
-  ... Logic Goes here
+  ...Logic Goes here
 </script>
 
 <template>
