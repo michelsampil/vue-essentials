@@ -1,6 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import CustomButton from './components/CustomButton.vue';
+import CounterButton from './components/CounterButton.vue';
+import TodoList from './components/TodoList.vue';
+import FilteredTodoList from './components/FilteredTodoList.vue';
+import FilteredTodosNoComputed from './components/FilteredTodosNoComputed.vue';
+import DayNightSwitch from './components/DayNightSwitch.vue';
 </script>
 
 <template>
@@ -8,36 +12,34 @@ import CustomButton from './components/CustomButton.vue';
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
   </header>
   <main>
-    <HelloWorld />
-    <CustomButton />
+    <div class="container">
+      <HelloWorld />
+    </div>
+    <div class="container">
+      <CounterButton />
+    </div>
+    <div class="container">
+      <DayNightSwitch />
+    </div>
+    <div class="container">
+      <TodoList />
+    </div>
+    <div class="container">
+      <FilteredTodosNoComputed />
+    </div>
+    <div class="container">
+      <FilteredTodoList />
+    </div>
+
   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+.container {
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 0 10px #02AAB0;
+  border-radius: 5px;
 }
 </style>
+
