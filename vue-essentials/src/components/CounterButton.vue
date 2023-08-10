@@ -65,34 +65,24 @@ export default {
   </div>
 </template>
 
-<style>
-   button{
-      background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
-      margin: 10px;
-      padding: 15px 45px;
-      text-align: center;
-      text-transform: uppercase;
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;            
-      box-shadow: 0 0 20px #eee;
-      border-radius: 10px;
-    }
+<style scoped>
+button {
+  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
 
-    button:hover {
-      background-position: right center; 
-      color: #fff;
-      text-decoration: none;
-    }
-
-    div {
-      display: flex;
-      justify-content: center;
-      background: #1e1e1e;
-    }
-  
-  body{
-          background: #1e1e1e;
-  }
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
 </style>
 <!-- END OPTION API STYLE -->
