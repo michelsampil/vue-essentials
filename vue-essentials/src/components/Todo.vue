@@ -31,7 +31,7 @@ fetchData()
     <div v-else="!isLoading">
       <h2>{{ `TodoId: ${todoId}` }}</h2>
       <br />
-      <p>{{ `UserId: ${todoData.UserId}` }}</p>
+      <p>{{ `UserId: ${todoData.userId}` }}</p>
       <p>{{ `Title: ${todoData.title}` }}</p>
       <p>{{ `Completed: ${todoData.completed}` }}</p>
     </div>
